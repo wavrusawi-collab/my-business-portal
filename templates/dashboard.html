@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Business Suite</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 min-h-screen">
+    <nav class="bg-indigo-800 text-white p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <span class="font-bold text-xl">{{ user.company.name }}</span>
+            <div class="flex items-center space-x-4">
+                <span>Welcome, <strong>{{ user.username }}</strong></span>
+                <a href="/" class="bg-indigo-700 hover:bg-indigo-600 px-4 py-2 rounded-lg text-sm transition-colors">Sign Out</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto mt-20 p-8">
+        <div class="max-w-2xl mx-auto bg-white rounded-2xl shadow-xl border border-slate-200 p-12 text-center">
+            <div class="mb-6 inline-flex items-center justify-center w-20 h-20 bg-indigo-100 text-indigo-600 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+            </div>
+            <h1 class="text-4xl font-extrabold text-slate-800 mb-4">Dashboard Coming Soon</h1>
+            <p class="text-slate-500 text-lg">We're currently preparing your business workspace. Check back shortly for advanced analytics and enterprise tools.</p>
+            <div class="mt-8 flex justify-center space-x-2">
+                <div class="w-2 h-2 bg-indigo-600 rounded-full animate-bounce"></div>
+                <div class="w-2 h-2 bg-indigo-600 rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
+                <div class="w-2 h-2 bg-indigo-600 rounded-full animate-bounce" style="animation-delay: 0.4s"></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
